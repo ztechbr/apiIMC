@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: api-imc
+    ports:
+      - "5600:5600"
+    restart: unless-stopped
+
